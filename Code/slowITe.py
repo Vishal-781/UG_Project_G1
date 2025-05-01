@@ -128,6 +128,8 @@ async def main():
     os.makedirs("results", exist_ok=True)
     
     try:
+        # Read IP addresses from file change this to your file name
+        # Ensure the file exists and is not empty
         with open("ip.txt", "r") as file:
             ip_addresses = [line.strip() for line in file if line.strip()]
         
